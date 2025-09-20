@@ -57,7 +57,7 @@ audio{
     background-image:linear-gradient(to left#000000 50%,#52040b 50%);
     max: width 800px;;
     min: width 400px;;
-    margin:40px;
+    margin: 100px;px;
     
 }
 audio::-webkit-media-controls-panel{
