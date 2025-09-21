@@ -7,19 +7,84 @@
     <title>&#x2764;eu te amo&#x2764;</title>
 <link rel="stylesheet" href="style.css">
 <style>
-    
+ .imagem-clicavel {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.2s;
+   display: block;     
+  margin: 0 auto;
+  object-fit: cover; 
+  
+}
+.imagem-clicavel:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
 
-    
+/* Esconde o parágrafo */
+.texto {
+  display: none;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  transition: all 5ms;
+  transition-duration: 2s;
+  transition-delay: 55ms;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  
+  
+  
+}
+
+/* Mostra o parágrafo quando o checkbox estiver marcado */
+#toggle:checked ~ .texto {
+  display: block;
+}
+  audio{
+    width:10%;
+    display:block
+  }  
+
+.digitando {
+  font-size: 28px;
+  font-family: monospace;
+  border-right: 3px solid black;
+  width: 18ch; /* número de caracteres */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: escrever 4s steps(18) infinite alternate;
+  text-align: center;
+  margin: auto;
+}
+
+@keyframes escrever {
+  from { width: 0 }
+  to { width: 18ch }
+}
 </style>
 
 </head>
 <body>
-   <p ><a href="index.html">&rAarr; voltar &lAarr;</a></p>
-  
-       <img class="ima" src="shero.png" alt="sherek" >
-        <img class="ima" src="ui.png" alt="ui"  >
-         <img class="ima" src="zoi.png" alt="olhos"  >
-           <img class="ima" src="euiela.png" alt="eu e ela"  >
+ <input type="checkbox" id="toggle" hidden>
+<label for="toggle">
+  <img src="shero.png" alt="Clique aqui" class="imagem-clicavel">
+</label>
+<audio autoplay controls loop ="metadata">
+     <div id="mtsk"></div><source src="First_Love-Late_Spring_-_mitski_mitski_Speed_Up_(SkySound.cc).mp3" type="audio/mpeg">
+</div> 
+    </audio>
+<p class="texto">essa e a menina que eu encontrei e quis carregar pra mim <br>
+    a menina que eu insisto e aposto minha vida. <br>
+    uma pessoa que eu confio, amo, cuido, eu quero passar minha vida ao seu lado meu amor eu  <br>quero ser feliz ao seu lado como pode uma pessoa ser tao especial pra mim eu fiz tudo  <br>isso pra demonstrar oque eu sinto por voce meu amor voce precisa ter ideia de como e o  <br>meu sentimento por voce eu te amo muito meu amor eu te adoro eu te cuido pra sempre eu  <br>estarei aqui pra te ajudar meu amor pra sempre eu serei seu companheiro eu estou a  <br>espera do momento de nosso casamento meu amor.
+</p>
+<p class="digitando">EU TE AMO</p >
+
+    <p ><a href="index.html">&rAarr; voltar &lAarr;</a></p>
+       
  
 </body>
 </html>
